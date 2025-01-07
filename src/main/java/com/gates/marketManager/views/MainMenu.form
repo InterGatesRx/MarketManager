@@ -86,7 +86,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="a9" green="a9" red="a9" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Vers&#xe3;o 1.0.0 &#xa9; MiniBags"/>
+            <Property name="text" type="java.lang.String" value="Vers&#xe3;o 1.0.0 &#xa9; marketManager"/>
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
         </Component>
@@ -102,9 +102,9 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                      <Component id="jLabel1" min="-2" pref="109" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="lblWelcome" min="-2" pref="240" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="lblWelcome" min="-2" pref="220" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                       <Component id="btnLogout" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="19" max="32767" attributes="0"/>
@@ -134,7 +134,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="85" green="15" red="c7" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="MiniBags"/>
+                <Property name="text" type="java.lang.String" value="brand here"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
             </Component>

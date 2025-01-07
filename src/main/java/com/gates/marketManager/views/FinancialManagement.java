@@ -2,9 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package com.gates.minibags.views;
+package com.gates.marketManager.views;
 
-import com.gates.minibags.util.DatabaseConnection;
+import com.gates.marketManager.util.DatabaseConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -239,7 +239,7 @@ public class FinancialManagement extends javax.swing.JFrame {
         clearFieldsButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Gestão Financeira - MiniBags");
+        setTitle("Gestão Financeira");
         setPreferredSize(new java.awt.Dimension(800, 600));
         setResizable(false);
 

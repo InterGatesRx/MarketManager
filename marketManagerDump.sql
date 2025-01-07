@@ -1,8 +1,6 @@
-CREATE DATABASE  IF NOT EXISTS `minibags` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `minibags`;
 -- MySQL dump 10.13  Distrib 8.0.36, for Linux (x86_64)
 --
--- Host: localhost    Database: minibags
+-- Host: localhost    Database: marketManager
 -- ------------------------------------------------------
 -- Server version	8.0.40-0ubuntu0.22.04.1
 
@@ -56,7 +54,7 @@ CREATE TABLE `customers` (
   `email` varchar(100) NOT NULL,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -65,7 +63,7 @@ CREATE TABLE `customers` (
 
 LOCK TABLES `customers` WRITE;
 /*!40000 ALTER TABLE `customers` DISABLE KEYS */;
-INSERT INTO `customers` VALUES (1,'Alice S','23543452','SAlice@outlook.com.br','2024-12-07 20:47:54'),(2,'Bruno Costa','21998765432','bruno@example.com','2024-12-07 20:47:54'),(4,'Mel Biazi','3223455','mel@example.com','2024-12-07 21:23:42'),(5,'Ana Gheno','234523465','ana@example.com','2024-12-07 22:33:07');
+INSERT INTO `customers` VALUES (1,'Alice Santos','11987654321','alice@example.com','2025-01-07 22:17:58'),(2,'Bruno Costa','21998765432','bruno@example.com','2025-01-07 22:17:58'),(3,'Carla Lima','31987654321','carla@example.com','2025-01-07 22:17:58'),(4,'Mel Biazi','12343241','2143@mel.com.br','2025-01-07 22:26:32');
 /*!40000 ALTER TABLE `customers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -88,7 +86,7 @@ CREATE TABLE `orders` (
   KEY `product_id` (`product_id`),
   CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`),
   CONSTRAINT `orders_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -97,7 +95,7 @@ CREATE TABLE `orders` (
 
 LOCK TABLES `orders` WRITE;
 /*!40000 ALTER TABLE `orders` DISABLE KEYS */;
-INSERT INTO `orders` VALUES (1,1,2,2,179.80,'2024-12-08 01:04:40'),(3,4,4,3,403.35,'2024-12-08 01:18:08'),(4,5,4,2,268.90,'2024-12-08 13:50:16'),(5,4,2,3,269.70,'2024-12-08 14:40:57');
+INSERT INTO `orders` VALUES (1,4,1,2,1138.00,'2025-01-07 22:28:56');
 /*!40000 ALTER TABLE `orders` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -115,7 +113,7 @@ CREATE TABLE `products` (
   `stock` int NOT NULL,
   `description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -124,7 +122,7 @@ CREATE TABLE `products` (
 
 LOCK TABLES `products` WRITE;
 /*!40000 ALTER TABLE `products` DISABLE KEYS */;
-INSERT INTO `products` VALUES (2,'Lancheira de 3 bolsos',89.90,230,'Feitor com camursa e desenhos de elefante.'),(4,'Bolsa chique',40.32,1,'bolsa 3'),(5,'Mochila Azul Celeste',38.93,40,'');
+INSERT INTO `products` VALUES (1,'Action Figure - Neuvillette',569.00,230,'The Might\'s learn be humble.');
 /*!40000 ALTER TABLE `products` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -143,7 +141,7 @@ CREATE TABLE `transactions` (
   `date` date DEFAULT NULL,
   `category` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -152,7 +150,7 @@ CREATE TABLE `transactions` (
 
 LOCK TABLES `transactions` WRITE;
 /*!40000 ALTER TABLE `transactions` DISABLE KEYS */;
-INSERT INTO `transactions` VALUES (1,'Receita','Venda - Pedido #4',268.90,'2024-12-08','Vendas'),(2,'Despesa','Salário do Colaborador 4',168.00,'2024-12-08','Salários'),(4,'Receita','Venda - Pedido #5',269.70,'2024-12-08','Vendas'),(5,'Despesa','Luz',269.70,'2024-12-08','Contas de Luz');
+INSERT INTO `transactions` VALUES (1,'Receita','Venda - Pedido #1',1138.00,'2025-01-07','Vendas');
 /*!40000 ALTER TABLE `transactions` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -165,4 +163,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-12-08 14:37:48
+-- Dump completed on 2025-01-07 19:34:17

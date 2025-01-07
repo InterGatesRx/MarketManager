@@ -2,9 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package com.gates.minibags.views;
+package com.gates.marketManager.views;
 
-import com.gates.minibags.util.DatabaseConnection;
+import com.gates.marketManager.util.DatabaseConnection;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -225,7 +225,7 @@ public class ProductManagementScreen extends javax.swing.JFrame {
         spnStock = new javax.swing.JSpinner();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Gestão de Produtos - MiniBags");
+        setTitle("Gestão de Produtos");
         setResizable(false);
 
         jPanel2.setBackground(new java.awt.Color(255, 240, 245));

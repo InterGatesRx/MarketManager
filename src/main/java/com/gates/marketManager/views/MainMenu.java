@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package com.gates.minibags.views;
+package com.gates.marketManager.views;
 
 import java.awt.Frame;
 import javax.swing.JFrame;
@@ -112,14 +112,14 @@ public class MainMenu extends javax.swing.JFrame {
 
         Copyright.setFont(new java.awt.Font("Roboto Slab", 0, 12)); // NOI18N
         Copyright.setForeground(new java.awt.Color(169, 169, 169));
-        Copyright.setText("Versão 1.0.0 © MiniBags");
+        Copyright.setText("Versão 1.0.0 © marketManager");
         Copyright.setFocusable(false);
 
         topPanel.setBackground(new java.awt.Color(255, 182, 193));
 
         jLabel1.setFont(new java.awt.Font("Roboto Slab", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(199, 21, 133));
-        jLabel1.setText("MiniBags");
+        jLabel1.setText("brand here");
         jLabel1.setFocusable(false);
 
         lblWelcome.setFont(new java.awt.Font("Roboto Slab", 1, 16)); // NOI18N
@@ -148,9 +148,9 @@ public class MainMenu extends javax.swing.JFrame {
             topPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(topPanelLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblWelcome, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblWelcome, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26)
                 .addComponent(btnLogout)
                 .addContainerGap(19, Short.MAX_VALUE))
